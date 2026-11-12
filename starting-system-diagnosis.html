@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How to Diagnose a Car That Won’t Start | AutoDiagPro</title>
+<meta name="description" content="A practical no-start diagnostic guide: separate no-crank from crank-no-start, test battery and starter circuits, and verify fuel, spark and engine signals before replacing parts.">
+<link rel="canonical" href="https://vickynazz448-sketch.github.io/Autodiagpro/starting-system-diagnosis.html">
+<meta name="robots" content="index,follow">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#02070b;color:#eafcff;font:16px/1.7 Arial,sans-serif}header{border-bottom:1px solid #16404b;background:#02070b;padding:16px 20px}header a{color:#00d9ff;text-decoration:none;font-weight:800}.wrap{max-width:900px;margin:auto;padding:34px 20px 70px}h1{font-size:clamp(32px,6vw,52px);line-height:1.12}h2{margin-top:34px;color:#00d9ff;font-size:25px}h3{color:#bdeef5;margin-bottom:6px}.lead,.muted{color:#a8c0c7}.panel{background:#071219;border:1px solid #16404b;border-radius:14px;padding:18px;margin:18px 0}.step{border-left:3px solid #00d9ff;padding:4px 0 4px 16px;margin:18px 0}.warning{border-left-color:#f59e0b}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;margin:12px 0}th,td{border:1px solid #16404b;padding:10px;text-align:left;vertical-align:top}th{color:#00d9ff;background:#071219}a{color:#65e8ff}li{margin:7px 0}.tag{display:inline-block;border:1px solid #16404b;border-radius:30px;padding:4px 10px;color:#9eeeff;font-size:12px}footer{border-top:1px solid #16404b;padding:22px;text-align:center;color:#78939b}
+</style>
+</head>
+<body>
+<header><a href="https://vickynazz448-sketch.github.io/Autodiagpro/">AutoDiagPro</a> <span class="muted"> / Diagnostic Guides</span></header>
+<main class="wrap">
+<span class="tag">STARTING & ELECTRICAL DIAGNOSIS</span>
+<h1>How to Diagnose a Car That Won’t Start</h1>
+<p class="lead">A no-start complaint is a symptom, not a failed-part diagnosis. First identify whether the engine does not crank or cranks normally but does not run. Then test the relevant circuit and confirm the fault before replacing components.</p>
+<div class="panel"><strong>Diagnostic rule</strong><p>Do not replace the battery, starter, fuel pump or sensors based only on a symptom or one fault code. Record the complaint, scan the vehicle where possible, test power and ground, and compare results with vehicle-specific service information.</p></div>
+<h2>1. Identify the exact symptom</h2>
+<div class="step"><h3>A. No-crank</h3><p>The starter does not rotate the engine. You may hear silence, a single click or rapid clicking. Focus first on battery condition, terminals, grounds, starter control, interlocks and the starter circuit.</p></div>
+<div class="step"><h3>B. Crank-no-start</h3><p>The starter rotates the engine at a reasonably normal speed, but the engine does not run. Focus on engine speed signal, immobilizer authorization, fuel delivery, ignition, compression and mechanical timing as applicable.</p></div>
+<div class="step"><h3>C. Slow cranking</h3><p>The engine turns slower than normal. Check battery state and capacity, cable voltage drop, engine ground, starter current draw and mechanical drag. Do not assume the battery is the cause without testing.</p></div>
+<h2>2. Start with basic safety and checks</h2>
+<ul>
+<li>Park on level ground, apply the parking brake and select Park or Neutral as specified by the vehicle.</li>
+<li>Keep hands, clothing and test leads clear of belts, fans and other moving parts. Electric cooling fans may start unexpectedly.</li>
+<li>Work in a ventilated area. Keep sparks, flames and smoking materials away from the battery and fuel system.</li>
+<li>Inspect the battery case, terminals, main fuses and visible wiring for damage, looseness, corrosion or overheating.</li>
+<li>Confirm the correct key is being used and note any security or immobilizer warning on the instrument cluster.</li>
+</ul>
+<h2>3. Test the battery and main connections</h2>
+<p>Measure directly at the battery posts, not only on the cable clamps. A fully charged conventional 12-volt lead-acid battery often reads around 12.6–12.8 V after resting, but temperature, battery chemistry and vehicle design affect the reading. Resting voltage alone does not prove battery health.</p>
+<div class="table-wrap"><table><thead><tr><th>Test</th><th>What to do</th><th>How to interpret it</th></tr></thead><tbody>
+<tr><td>Visual inspection</td><td>Check case condition, terminal tightness and corrosion.</td><td>Repair loose or damaged connections before further conclusions.</td></tr>
+<tr><td>Resting voltage</td><td>Measure across the battery posts after the vehicle has been off long enough for the reading to stabilise.</td><td>A low reading suggests low state of charge; recharge and retest using the correct battery procedure.</td></tr>
+<tr><td>Cranking voltage</td><td>Use a meter with min/max capture while cranking, following safe test procedures.</td><td>A large drop can indicate a weak battery, excessive starter draw or high-resistance connections. Compare with the vehicle specification and test temperature.</td></tr>
+<tr><td>Battery condition</td><td>Use an appropriate conductance or load tester with the correct battery rating and type selected.</td><td>Use the tester result and manufacturer procedure; do not judge capacity from voltage alone.</td></tr>
+</tbody></table></div>
+<h2>4. If the engine does not crank</h2>
+<ol>
+<li>Confirm the battery is sufficiently charged and its terminals are sound.</li>
+<li>Check the main starter and battery fuses using the wiring diagram. A visual check alone may miss a failed fuse or poor connection.</li>
+<li>Check the engine-to-body ground and battery negative cable. Perform a voltage-drop test under the appropriate load rather than relying only on an unloaded continuity check.</li>
+<li>Check whether the start request is recognised. Verify Park/Neutral or clutch switch status, brake switch status and immobilizer authorisation in live data when supported.</li>
+<li>At the starter, test the main supply and the solenoid control signal during a start request. Follow the vehicle-specific wiring diagram and keep clear of moving parts.</li>
+<li>If the correct control signal and supply reach the starter but it does not operate, test the starter and check for mechanical engine restriction before condemning it.</li>
+</ol>
+<div class="panel warning"><strong>Important:</strong> Never bridge starter terminals or bypass a neutral-safety, clutch or immobilizer circuit as a shortcut. Unexpected cranking can cause injury or vehicle movement.</div>
+<h2>5. If the engine cranks but does not start</h2>
+<ol>
+<li><strong>Scan all relevant modules.</strong> Save DTCs and freeze-frame data before clearing anything. A code points to a detected condition; it does not automatically identify the failed part.</li>
+<li><strong>Check engine speed while cranking.</strong> If scan data shows no RPM, investigate crankshaft-position signal, wiring, power/ground and module data using the service procedure.</li>
+<li><strong>Check immobilizer authorisation.</strong> Confirm key recognition and start authorisation in supported live data. Follow the approved key/security procedure.</li>
+<li><strong>Verify fuel delivery.</strong> Check fuel level, specified low- and high-pressure readings, pump command and relevant fuses/relays where applicable. Use the exact engine procedure; direct-injection systems can retain dangerous pressure.</li>
+<li><strong>Verify ignition or injection command.</strong> Use suitable approved test equipment and the manufacturer's procedure. Do not create an open spark near fuel vapour.</li>
+<li><strong>Check air and mechanical condition.</strong> Inspect intake restrictions and, if the earlier tests support it, perform compression, leak-down or timing checks to the manufacturer's specification.</li>
+</ol>
+<h2>6. Use evidence to narrow the cause</h2>
+<div class="table-wrap"><table><thead><tr><th>Finding</th><th>Next diagnostic direction</th></tr></thead><tbody>
+<tr><td>No crank and no starter control signal</td><td>Trace start request, interlock, immobilizer, relay/control module and wiring.</td></tr>
+<tr><td>Starter clicks; voltage collapses</td><td>Test battery condition, cable voltage drop and starter current draw.</td></tr>
+<tr><td>Starter turns engine; scan RPM remains zero</td><td>Test crankshaft signal circuit and related module supply/ground and wiring.</td></tr>
+<tr><td>RPM is present but start authorisation is denied</td><td>Follow the vehicle's immobilizer/key diagnostic procedure.</td></tr>
+<tr><td>RPM and authorisation are valid, but fuel pressure is below specification</td><td>Diagnose the relevant fuel supply, pump control, pressure regulation and sensor circuits.</td></tr>
+<tr><td>Fuel and ignition/injection checks pass</td><td>Continue with air, compression, valve timing and mechanical checks.</td></tr>
+</tbody></table></div>
+<h2>7. Record the repair evidence</h2>
+<p>Before and after repair, record the customer's exact complaint, battery test result, DTC report, relevant live-data values, voltage-drop readings, fuel-pressure readings where applicable, and the final verification test. Clear codes only after saving the original report and completing the repair, then re-scan and confirm the original symptom is resolved.</p>
+<div class="panel"><strong>Professional reminder</strong><p>Specifications and test locations vary by make, model, year, engine and electrical architecture. Always confirm pinouts, pressure values, torque settings and test limits in reliable vehicle-specific service information. If the vehicle has high-voltage hybrid/EV systems, follow the required high-voltage training and isolation procedure; do not probe orange cables.</p></div>
+<p class="muted">This guide is general educational information. It is not a substitute for vehicle-specific service data or qualified safety procedures.</p>
+<p><a href="https://vickynazz448-sketch.github.io/Autodiagpro/">← Back to AutoDiagPro home</a></p>
+</main>
+<footer>AutoDiagPro · Professional Automotive Diagnostic Guide</footer>
+</body>
+</html>
